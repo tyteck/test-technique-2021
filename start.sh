@@ -9,6 +9,8 @@ npm install && npm run prod
 cp .env.example .env
 docker exec -it group-actual php artisan key:generate
 
-echo "merci de donner les droits suivants à l'utilisateur www-data pour l'ensemble du dossier, ou au moins pour les répertoires storage et bootstrap"
-echo "sudo chown -R www-data:$USER"
-echo "sudo chmod -R g+rw"
+echo "merci de permettre à www-data de pouvoir écrire sur bootstrap et storage"
+echo 'sudo chown -R www-data:$USER storage bootstrap'
+echo 'sudo chmod -R g+rw storage bootstrap'
+
+echo "une fois que tout ca est ok vous pouvez ouvrir votre navigateur sur http://localhost:8088"
