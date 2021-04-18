@@ -4,21 +4,26 @@
 
 Ceci est ma proposition de solution pour la validation du test technique soumis par Steven Van Poeck.
 
-Temps de réalisation : à peu près 3h30 (sans la doc)
+Temps de réalisation : à peu près 4h (avec la doc)
 
 Le service utilise :
-- Docker,
+- Docker 🐳
 - Laravel 8
-- PHP 8
+- PHP 8 🐘
 - TailwindCss
 - NPM (nodejs)
+- sqlite 
 
 ### Installation
 
+Dans un souci de simplicité, mon docker-compose bind le port 8088 de la machine hote sur le port 80 du container. Si un autre service est deja bindé sur ce port ... ce sera une fatal error 👾.
+
+
 ```
-git clone 
+git clone git@github.com:tyteck/group-actual.git tyteca-test
 
 cd tyteca-test
 
 ./start.sh
 ```
+Ouvrez votre navigateur sur `http://localhost:8088`.
