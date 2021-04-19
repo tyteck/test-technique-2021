@@ -9,6 +9,8 @@ npm install && npm run prod
 cp .env.example .env
 docker exec -it group-actual php artisan key:generate
 
+docker exec -it group-actual php artisan migrate:fresh --seed
+
 echo "---------------------------------------------------"
 echo " "
 echo "Merci de permettre à www-data de pouvoir écrire 📝 sur bootstrap et storage"
