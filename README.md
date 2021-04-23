@@ -1,4 +1,4 @@
-## Group Actual (test technique)
+## Un tests technique qui m'a été soumis en avril 2021
 
 ### Introduction
 
@@ -20,7 +20,7 @@ Dans un souci de simplicité, mon docker-compose bind le port 8088 de la machine
 
 
 ```
-git clone git@github.com:tyteck/group-actual.git tyteca-test
+git clone git@github.com:tyteck/test-technique-2021.git tyteca-test
 
 cd tyteca-test
 
